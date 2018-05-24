@@ -1,43 +1,74 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="contactNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="far fa-envelope"></i> edycarreyes@gmail.com</a>
+          <a class="nav-link"><i class="far fa-envelope"></i> edycarreyes@gmail.com</a>
         </li>
-        <br>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-whatsapp"></i> +505 88643494</a>
+          <a class="nav-link"><i class="fab fa-whatsapp"></i> +505 88643494</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="about"><i class="fas fa-question"></i> Acerca de Nosotros</a>
         </li>
       </ul>
   </nav>
 
 <!--Navbar de Navegacion-->
-<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning ">
   <div class="container">
-    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand mx-auto" href="#">
-        <img src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Lion-Play
-    </a>
-  
+      <a class="navbar-brand mx-auto" href="" routerLink="/"><img src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" width="40" height="40" class="d-inline-block align-top" alt="">Lion-Play</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="" routerLink="/">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Categorias
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Descargas
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">PC</a>
+            <a class="dropdown-item" href="" routerLink="pc">PC</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="" routerLink="ps2">PlayStation 2</a>
+            <a class="dropdown-item" href="" routerLink="ps3">PlayStation 3</a>
+            <a class="dropdown-item" href="" routerLink="ps4">PlayStation 4</a>
+            <a class="dropdown-item" href="" routerLink="psp">PlayStation Portatil (PSP)</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="" routerLink="xbox360">XBOX 360</a>
+            <div class="dropdown-divider"></div>
+            <a href="" class="dropdown-item" routerLink="android">Android</a>
+            <div class="dropdown-divider"></div>
+            <a href="" class="dropdown-item" routerLink="ios">iOS</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="utilidades">Utilidades</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="" routerLink="ayuda">Ayuda</a>
+          </li>
       </ul>
+    </div>
+    <div class="">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link" routerLink="favoritos"><mat-icon matBadge="0" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="warn" alt="Favoritos" ><i class="material-icons" style="font-size: 30px;">favorite_border</i></mat-icon></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="material-icons" style="font-size: 30px;">account_circle</i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" routerLink="account">Mi Cuenta</a>
+                <a class="dropdown-item" href="">Cerrar Sesion</a>
+              </div>
+            </li>
+          </ul>
     </div>
   </div>
   </nav>
