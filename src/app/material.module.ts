@@ -25,7 +25,8 @@ import{
     MatToolbarModule,
     MatTooltipModule,
     MAT_NATIVE_DATE_FORMATS,
-    MAT_DATE_LOCALE
+    MAT_DATE_LOCALE,
+    MatBadgeModule,
 }from '@angular/material';
 
 @NgModule({
@@ -52,6 +53,7 @@ import{
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    MatBadgeModule
     ],
     exports: [
         MatButtonModule,
@@ -76,6 +78,7 @@ import{
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    MatBadgeModule
     ],
     providers:[
         {provide: MAT_DATE_LOCALE, useValue: 'es-ES'},
