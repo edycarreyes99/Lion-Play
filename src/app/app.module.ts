@@ -25,6 +25,17 @@ import { UtilidadesComponent } from './componentes/utilidades/utilidades.compone
 import { Xbox360Component } from './componentes/xbox360/xbox360.component';
 import { FavoritosComponent } from './componentes/favoritos/favoritos.component';
 import { AboutComponent } from './componentes/about/about.component';
+import {environment} from '../environments/environment';
+import {ServicioService} from './servicio.service';
+import {AuthContentOnlyGuard} from './auth-content-only.guard';
+
+import {AngularFireModule} from 'angularfire2';
+import {AngularFirestoreModule} from 'angularfire2/firestore';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {AngularFireAuthModule} from 'angularfire2/auth';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -54,9 +65,18 @@ import { AboutComponent } from './componentes/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.FirebaseConfig),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    ReactiveFormsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    AngularFirestoreModule
+
+
   ],
-  providers: [],
+  providers: [NavbarComponent,ServicioService,AuthContentOnlyGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
