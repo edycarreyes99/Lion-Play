@@ -27,6 +27,7 @@ import { UtilidadesComponent } from './componentes/utilidades/utilidades.compone
 import { Xbox360Component } from './componentes/xbox360/xbox360.component';
 import { FavoritosComponent } from './componentes/favoritos/favoritos.component';
 import { AboutComponent } from './componentes/about/about.component';
+import {LoginComponent} from './componentes/login/login.component';
 import {environment} from '../environments/environment';
 import {ServicioService} from './servicio.service';
 import {AuthContentOnlyGuard} from './auth-content-only.guard';
@@ -65,7 +66,8 @@ import {MaterialModule} from './material.module';
     UtilidadesComponent,
     Xbox360Component,
     FavoritosComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
