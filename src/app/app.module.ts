@@ -1,6 +1,8 @@
+//modulos de angular generales
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//componentes a utilizarce
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccountProfileComponent } from './componentes/account-profile/account-profile.component';
@@ -29,6 +31,7 @@ import {environment} from '../environments/environment';
 import {ServicioService} from './servicio.service';
 import {AuthContentOnlyGuard} from './auth-content-only.guard';
 
+//modulos de dependencias a utilizarce
 import {AngularFireModule} from 'angularfire2';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
@@ -36,6 +39,7 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from './material.module';
 
 @NgModule({
   declarations: [
@@ -69,10 +73,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AngularFireModule.initializeApp(environment.FirebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
+    AngularFirestoreModule,
     ReactiveFormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    AngularFirestoreModule
+    MaterialModule,
 
 
   ],
