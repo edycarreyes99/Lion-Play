@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   FirebaseConfig: {
-    apiKey: "AIzaSyD5fNnKavHfKvwOBbiXalabvB-Z-X2Q4S8",
-    authDomain: "lion-play.firebaseapp.com",
-    databaseURL: "https://lion-play.firebaseio.com",
-    projectId: "lion-play",
-    storageBucket: "lion-play.appspot.com",
-    messagingSenderId: "94451493619"
+    apiKey: "AIzaSyDv5yQ83c9in0T0jYpKKlRzPPJGd56FBQs",
+    authDomain: "lion-play1001.firebaseapp.com",
+    databaseURL: "https://lion-play1001.firebaseio.com",
+    projectId: "lion-play1001",
+    storageBucket: "",
+    messagingSenderId: "1063092691518"
   }
 };
 

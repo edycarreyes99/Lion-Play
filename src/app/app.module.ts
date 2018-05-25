@@ -1,6 +1,7 @@
 //modulos de angular generales
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 //componentes a utilizarce
 import { AppRoutingModule } from './app-routing.module';
@@ -75,11 +76,12 @@ import {MaterialModule} from './material.module';
     AngularFireModule.initializeApp(environment.FirebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFirestoreModule,
+    AngularFirestoreModule.enablePersistence(),
     ReactiveFormsModule,
     HttpModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule
 
 
   ],
