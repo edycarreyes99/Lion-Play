@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
   public sexo: string;
   public profilePhoto: string;
   public telefono: string;
+  public currentUser: any;
 
   constructor(
     public servicio: ServicioService,
@@ -29,8 +30,13 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    var user = this.afAuth.auth.currentUser;
-    console.log("estado de verificacion del usuario: "+user.emailVerified);
+    this.servicio.getAuth().subscribe(user=>{
+      if(user)
+      {
+        console.log(user.email);
+        console.log(user.uid);
+      }
+    })
   }
 
   register(){
