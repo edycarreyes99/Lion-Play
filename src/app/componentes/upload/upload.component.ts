@@ -16,7 +16,7 @@ export class UploadComponent implements OnInit {
   snapshot: Observable<any>;
 
   //URL de descarga
-  URL: Observable<string>;
+  URL: string;
 
   //estado del toggling css para el dropZone
   isHovering: boolean;
@@ -51,7 +51,7 @@ export class UploadComponent implements OnInit {
     this.snapshot = this.task.snapshotChanges();
 
     //URL de descarga
-    this.URL = this   
+    this.URL = this.task.task.snapshot.downloadURL;
 
 
 
