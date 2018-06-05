@@ -32,16 +32,19 @@ import {LoginComponent} from './componentes/login/login.component';
 import {environment} from '../environments/environment';
 import {ServicioService} from './servicio.service';
 import {AuthContentOnlyGuard} from './auth-content-only.guard';
+import { UploadComponent } from './componentes/upload/upload.component';
 
 //modulos de dependencias a utilizarce
 import {AngularFireModule} from 'angularfire2';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
+import {AngularFireStorageModule} from 'angularfire2/storage';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
+import { DropZoneDirective } from './drop-zone.directive';
 
 @NgModule({
   declarations: [
@@ -68,7 +71,9 @@ import {MaterialModule} from './material.module';
     Xbox360Component,
     FavoritosComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    UploadComponent,
+    DropZoneDirective
   ],
   imports: [
     BrowserModule,
@@ -77,6 +82,8 @@ import {MaterialModule} from './material.module';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFirestoreModule.enablePersistence(),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
     ReactiveFormsModule,
     HttpModule,
     BrowserAnimationsModule,

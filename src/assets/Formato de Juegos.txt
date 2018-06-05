@@ -1,0 +1,10 @@
+Titulo
+Descripcion
+[imagen]
+Features
+[imagen]
+Requerimientos de Sistema
+[imagen]
+Descarga
+Fixes
+Galeria de imagenes

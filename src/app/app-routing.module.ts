@@ -24,6 +24,7 @@ import { Xbox360Component } from './componentes/xbox360/xbox360.component';
 import { FavoritosComponent } from './componentes/favoritos/favoritos.component';
 import { AboutComponent } from './componentes/about/about.component';
 import {LoginComponent} from './componentes/login/login.component';
+import { UploadComponent } from './componentes/upload/upload.component';
 
 const routes: Routes = [
   {path: '',component: InicioComponent},
@@ -46,7 +47,8 @@ const routes: Routes = [
   {path: 'about',component: AboutComponent},
   {path: 'altosRequisitos',component: AltosRequisitosComponent},
   {path: 'mediosRequisitos',component: MediosRequisitosComponent},
-  {path: 'bajosRequisitos',component: BajosRequisitosComponent}
+  {path: 'bajosRequisitos',component: BajosRequisitosComponent},
+  {path: 'upload',component: UploadComponent}
 ];
 
 @NgModule({
