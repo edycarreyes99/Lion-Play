@@ -25,6 +25,7 @@
     "angularfire2": "^5.0.0-rc.10",
     "bootstrap": "^4.1.1",
     "bulma": "^0.7.1",
+    "chance-de": "^1.0.2",
     "core-js": "^2.5.4",
     "firebase": "^5.0.3",
     "font-awesome": "^4.7.0",

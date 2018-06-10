@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireStorage, AngularFireUploadTask } from 'angularfire2/storage';
 import { Observable } from 'rxjs/Observable';
+import {Chance} from 'chance-de'
 
 @Component({
   selector: 'app-upload',
@@ -64,6 +65,9 @@ export class UploadComponent implements OnInit {
     return snapshot.state === 'running' && snapshot.bytesTransferred < snapshot.totalBytes
   }
   ngOnInit() {
+    var chance = new Chance();
+    var nombre = chance.nombre();
+    console.log(nombre);
   }
 
 }
